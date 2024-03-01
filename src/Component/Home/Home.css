@@ -1,0 +1,99 @@
+.homepage {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 120px;
+  }
+  .homepage .hh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+  }
+  .homepage .hh h1 {
+    font-size: 30px;
+  }
+  .homepage .hh h1 .name {
+    color: rgb(232, 165, 72);
+    box-shadow: 0 0px 3px red;
+  }
+  .homepage .hh h1 .name:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    color: #e75b1f;
+    font-size: 40px;
+    font-style: oblique;
+  }
+  .homepage .hh p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.8;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+  }
+  .homepage .hh .hirebtn {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    z-index: 1;
+    font-size: 1.2rem;
+    height: 42px;
+    width: 17vh;
+    margin-top: 2rem;
+  }
+  .homepage .hh .hirebtn .hireicon {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: none;
+  }
+  .homepage .image::after {
+    content: "";
+    height: 400px;
+    background-color: #525050;
+    width: 400px;
+    display: flex;
+    position: absolute;
+    top: 230px;
+    right: 145px;
+    border-radius: 100% 20% 50%;
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.5), 10px 10px 30px rgba(0, 0, 0, 0.5), 10px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: -9;
+  }
+  .homepage .image .im {
+    padding-top: 59px;
+    padding-right: 20px;
+    height: 550px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100% 100%;
+  }
+  .homepage .image .im img {
+    height: 400px;
+    width: 300px;
+    border-radius: 70% 20%/20% 0%;
+  }
+  .homepage .image .im::before {
+    content: "";
+    width: 200px;
+    height: 165px;
+    top: 250px;
+    background: radial-gradient(#d6d1d1 22%, transparent 25%);
+    background-size: 25px 25px;
+    background-position: 0px 70px;
+    position: absolute;
+    right: 410px;
+    z-index: -9;
+  }/*# sourceMappingURL=Home.css.map */

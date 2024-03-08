@@ -1,8 +1,9 @@
 import React from 'react'
 import './Navbar.css'
-import { GrContact } from "react-icons/gr";
-import {Link} from  "react-router-dom";
+// import {Link} from  "react-router-dom";
 import {motion} from 'framer-motion';
+import Toggle from '../Toggle/Toggle';
+import {Link} from 'react-scroll';
 const Navbar = () => {
     const navbar =[
         {
@@ -10,16 +11,16 @@ const Navbar = () => {
             link:'home',
         },
         {
-            name: "About Us",
-            link: 'about',
+            name: "Services",
+            link: 'services',
         },
         {
             name: "Portfolio",
             link: 'portfolio',
         },
         {
-            name: "Client",
-            link: 'client'
+            name: "Experience",
+            link: 'experience'
         }
       ]
   return (
@@ -32,12 +33,11 @@ const Navbar = () => {
         </div>
         <div className="nav">
            {navbar.map((link,index)=>(
-                <Link key={index} to={link.link} className="nav-link">{link.name}</Link>
+                <Link key={index} to={link.link} spy={true} smooth={true} className="nav-link">{link.name}</Link>
            ))}
         </div>
-            <button className='contbtn'>
-            <GrContact className='conIcon'/>
-            Contact Me</button>
+            <Toggle/>
+            <button className='button'><Link spy={true} to='Contact' smooth={true}>Contact Me</Link></button>
     </motion.div>
     </>
   )

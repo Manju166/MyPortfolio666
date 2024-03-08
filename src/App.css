@@ -11,3 +11,27 @@ body{
   overflow: hidden;
   overflow-y: scroll;
 }
+:root{
+  --boxShadow: 0px 19px 60px rgb(0, 0,  0 /8%);
+}
+.App{
+  overflow: hidden;
+  color: var(--black);
+}
+.button{
+  border-radius: 34px;
+  bottom: none;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background-color: aliceblue;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: bisque;
+}
+@media screen and (max-width:480px) {
+  .App{
+    padding: 0.5rem 1rem;
+  }
+  
+}

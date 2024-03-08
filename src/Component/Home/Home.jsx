@@ -11,7 +11,7 @@ const transition = {duration:2,type:'spring'}
     <>
     <div className="homepage">
     <div className="emoji">
-    <motion.img initial={{left:'46%'}} whileInView={{left:'34%'}} transition={transition} src="emojichasma.jpg" alt="" />
+    <motion.img initial={{left:'46%',rotate:360}} whileInView={{left:'34%',rotate:0}} transition={transition} src="emojichasma.jpg" alt="" />
     <div className='hh'>
       <h3>Hello,</h3>
       <h1>I'm <span className='name'>Manju</span><br/>Frontend Developer</h1>

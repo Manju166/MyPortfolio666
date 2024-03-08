@@ -1,27 +1,33 @@
 import React from 'react'
 import './Exp.css'
+import { motion } from 'framer-motion'
 const Exp = () => {
+  const transition={duration:7,type:'spring'}
+
   return (
     <>
         <div className='experience'>
-        <div className="achievement">
-          <div className="circle">
+        <motion.div className="achievement">
+          <motion.div className="circle" initial={{rotate:360}}
+                whileInView={{rotate:0}} transition={transition}>
           <div className="c">0-1</div>
-         </div>
+         </motion.div>
           <span>years</span>
           <span>Experience</span>
-        </div>
+        </motion.div>
         <div className="achievement">
-          <div className="circle">
+          <motion.div className="circle" initial={{rotate:360}}
+                whileInView={{rotate:0}} transition={transition}>
           <div className="c">10+</div>
-         </div>
+         </motion.div>
           <span>completed</span>
           <span>Projects</span>
         </div>
         <div className="achievement">
-          <div className="circle">
+          <motion.div className="circle" initial={{rotate:360}}
+                whileInView={{rotate:0}} transition={transition}>
           <div className="c">3+</div>
-          </div>
+          </motion.div>
           <span>months</span>
           <span>Training</span>
         </div>

@@ -21,8 +21,8 @@ import { motion } from 'framer-motion'
            </div>
             <div className="cards">
                 <motion.div className='card'
-                initial={{right:'25rem'}}
-                whileInView={{right:'31rem'}} transition={transition}
+                initial={{right:'25rem',rotate:-45}}
+                whileInView={{right:'31rem',rotate:0}} transition={transition}
                  style={{right:'31rem', top:'10rem'}}>
                   <Card
                     emoji={"happyemoji.png"}

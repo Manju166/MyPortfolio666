@@ -1,6 +1,5 @@
 import React from 'react'
 import './Navbar.css'
-// import {Link} from  "react-router-dom";
 import {motion} from 'framer-motion';
 import Toggle from '../Toggle/Toggle';
 import {Link} from 'react-scroll';

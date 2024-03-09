@@ -1,7 +1,7 @@
 .homepage {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     overflow: hidden;
     margin: 10rem 9rem 0 4rem;
@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 18px;
+    margin-left: 5rem;
   }
   .homepage .hh h1 {
     font-size: 30px;
@@ -79,7 +80,7 @@
     top: 30px;
     border-radius: 70% 20%/20% 0%;
     z-index: 1;
-  } */
+  } 
   .emoji{
     position: absolute;
   }
@@ -87,8 +88,7 @@
     position: absolute;
     height: 4rem;
     width: 4rem;
-    left: 34rem; 
-    top: 10rem;
+    top: -7rem;
   }
   .blur{
     position: absolute;
@@ -125,22 +125,21 @@
   }
 
   @media screen and (max-width:480px) {
-   .homepage{
-    flex-direction: column;
-   }
-   .hh{
+  .hh{
+     width: 100vw;
     transform: scale(0.8);
     position: relative;
-    right: 2rem;
+    top: -8rem;
+    left: -10rem;
    }
    .image{
-    margin-top: -110px;
-    margin-bottom: -200px;
-    transform: scale(0.5);
+    display: none;
    }
    .floating{
     position: absolute;
     left: -1rem !important;
     top: 7rem;
+    transform: scale(0.5);
+    z-index: 2;
    }
   }

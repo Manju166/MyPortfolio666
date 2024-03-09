@@ -4,7 +4,6 @@ import { FaMoon } from "react-icons/fa";
 import { GoSun } from "react-icons/go";
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-import { type } from '@testing-library/user-event/dist/type';
  const Toggle = () => {
     const theme = useContext(themeContext);
     const darkMode=theme.state.darkMode;

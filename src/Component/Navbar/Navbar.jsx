@@ -36,7 +36,7 @@ const Navbar = () => {
            ))}
         </div>
             <Toggle/>
-            <button className='button'><Link spy={true} to='Contact' smooth={true}>Contact Me</Link></button>
+            <button className='contbtn'><Link spy={true} to='Contact' smooth={true}>Contact Me</Link></button>
     </motion.div>
     </>
   )

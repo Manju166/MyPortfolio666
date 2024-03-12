@@ -11,9 +11,9 @@ import { FaGithub } from "react-icons/fa";
             <div className="f-content">
                 <span>manjubhandariabc@gmail.com</span>
                 <div className="f-icons">
-                <FaInstagram size="3rem" className='s-icons'/>
-                <FaLinkedin size="3rem" className='s-icons'/>
-                <FaGithub size="3rem" className='s-icons'/>
+               <a href="https://instagram.com/manjubhandari592?igshid=MzNINGNkZWQ4Mg=="><FaInstagram size="3rem" className='s-icons'/></a>
+               <a href="https://www.linkedin.com/in/manju-bhandari-b98a70233"><FaLinkedin size="3rem" className='s-icons'/></a>
+                <a href="https://github.com/Manju166"><FaGithub size="3rem" className='s-icons'/></a>
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@ const transition = {duration:7,type:'spring'}
     </div>
     <motion.div className="image" initial={{top:'46%',right:'50%'}} whileInView={{left:'55%'}} transition={transition} >
         <div className='floating'>
-          <FloatingDiv text='Web Developer'/>
+          <FloatingDiv text='React Developer'/>
         </div>
         <div className="im">
         <img src="img.jpg" alt="" />

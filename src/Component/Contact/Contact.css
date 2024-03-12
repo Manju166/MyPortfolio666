@@ -43,7 +43,7 @@ textarea{
         transform: scale(0.8);
         position: relative;
         width: 13rem;
-        right: 3rem;
+        right: 5rem;
         top: -17em;
     }
     .awesome span:nth-of-type(1){
@@ -58,5 +58,8 @@ textarea{
     left: -7rem !important;
     top: -18rem;
    }
+}
+@media screen and (max-width:960px) {
+    
 }
 

@@ -21,7 +21,6 @@
     margin-top: 1rem;
 }
 .awesome > :nth-child(3){
-    color: gray;
     font-size: 20px;
     margin-top: 1.5rem;
     line-height: 28px;
@@ -73,13 +72,6 @@ img{
     font-size: 14px;
     color: #5290fd;
 }
-.s-blur{
-    background-color: yellow;
-}
-.s-blur h1{
-    background-color: #5290fd;
-    height: 20rem;
-}
 @media screen and (max-width:480px) {
     .services{
      margin-top: 10rem;
@@ -90,6 +82,12 @@ img{
         position: relative;
         width: 13rem;
         right: 9rem;
+    }
+    .awesome > :nth-child(3){
+        margin-left: -2rem;
+        text-align: start;
+        font-size: 20px;
+        width: 20rem;
     }
     .cards{
         transform: scale(0.5);

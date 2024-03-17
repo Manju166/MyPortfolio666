@@ -25,7 +25,7 @@ import './Contact.css'
     <>
     <div className="contact-form" id='Contact'>
         <div className="w-left">
-            <div className="awesome">
+            <div className="awesomes">
                 <span>Get in touch</span>
                 <span>Contact me</span>
             </div>

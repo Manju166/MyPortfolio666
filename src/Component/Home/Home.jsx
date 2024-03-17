@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Home.css';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import FloatingDiv from './FloatingDiv';
 import {motion} from 'framer-motion'
+import { ReactTyped } from 'react-typed';
+
 const Home = () => {
-const transition = {duration:7,type:'spring'}
+  const transition = {duration:7,type:'spring'}
+  const typedRef = useRef(null);
+const handleTypingComplete = () => {
+  // Restart the typing animation
+  if (typedRef.current) {
+    typedRef.current.reset();
+  }
+};
   return (
     <>
     <div className="homepage">
@@ -16,7 +25,8 @@ const transition = {duration:7,type:'spring'}
     src="emojichasma.jpg" alt=""/>
     <div className='hh'>
       <h3>Hello,</h3>
-      <h1>I'm <span className='name'>Manju</span><br/>Frontend Developer</h1>
+      <ReactTyped strings={["I'M MANJU","I'M MANJU <br/>FRONTEND DEVELOPER"]} typeSpeed={30} loop onComplete={handleTypingComplete} />
+
       <p>I am a skilled and passionate web designer with 
       experience in creating visually appealing and user-friendly websites. </p>
       <button className='button h-btn'>Hire me</button>

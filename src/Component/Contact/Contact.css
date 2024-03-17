@@ -1,8 +1,27 @@
 .contact-form{
     display: flex;
-    height: 80vh;
+    height: 100vh;
     padding-left: 15rem;
-    margin-top: 14rem;
+    margin-top: 10rem;
+}
+.awesomes{
+    display: flex;
+    flex-direction: column;
+}
+.awesomes > :nth-child(1){
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesomes > :nth-child(2){
+    color: rgb(254, 167, 5);
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.awesomes > :nth-child(3){
+    font-size: 20px;
+    margin-top: 1.5rem;
+    line-height: 28px;
+    width: 27rem;
 }
 .c-right{
     display: flex;
@@ -36,7 +55,6 @@ textarea{
 }
 @media screen and (max-width:480px) {
     .contact-form{
-        margin-top: 0;
         flex-direction: column;
     }
     .w-left{
@@ -46,20 +64,30 @@ textarea{
         right: 5rem;
         top: -17em;
     }
-    .awesome span:nth-of-type(1){
+    .awesomes span:nth-of-type(1){
         width: 50vh;
     }
-    .awesome span:nth-of-type(2){
+    .awesomes span:nth-of-type(2){
         width: 50vh;
     }
    .c-right>form{
     position: relative;
     transform: scale(0.8);
-    left: -7rem !important;
-    top: -18rem;
+    left: 23rem !important;
+    top: -25rem;
    }
 }
-@media screen and (max-width:960px) {
+@media screen and (max-width:799px) {
     
+    .awesomes{
+        width: calc(100px + 40vw);
+        position: relative;
+        left: -10rem;
+    }
+    .c-right{
+        top: 10rem;
+        left: -30rem;
+        
+    }
 }
 

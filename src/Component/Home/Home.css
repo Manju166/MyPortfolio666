@@ -13,21 +13,7 @@
     gap: 18px;
     margin-left: 5rem;
   }
-  .homepage .hh h1 {
-    font-size: 30px;
-  }
-  .homepage .hh h1 .name {
-    color: rgb(232, 165, 72);
-    box-shadow: 0 0px 3px red;
-  }
-  .homepage .hh h1 .name:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.4s ease-in-out;
-    color: #e75b1f;
-    font-size: 40px;
-    font-style: oblique;
-  }
+  /*  */
   .homepage .hh p {
     font-size: 20px;
     text-align: left;
@@ -123,17 +109,45 @@
     background-color: #e75b1f;
     border-radius: 20px;
   }
+  
+  @media screen and (max-width:799px) {
+   .homepage{
+    width: calc(200px + 65vw);
+    position: relative;
+    left: -3rem;
+   }
+    .hh{
+        width: 100%;
+        transform: scale(0.8);
+        position: relative;
+        left: -8rem;
+    }
+    .image{
+      transform: scale(0.8);
+      position: relative;
+      right: -10rem;
+    }
 
+  }
   @media screen and (max-width:480px) {
+    .homepage{
+      position: relative;
+      top: -8rem;
+      left: -4.5rem;
+      margin-bottom: -35rem;
+    }
   .hh{
      width: 100vw;
-    transform: scale(0.8);
+     align-items: flex-start;
     position: relative;
-    top: -8rem;
-    left: -10rem;
+    top: -1rem;
+    left: -5rem;
+   }
+   .emoji img{
+    transform: scale(0.5);
    }
    .image{
-    display: none;
+    transform: scale(0.7);
    }
    .floating{
     position: absolute;
@@ -142,4 +156,8 @@
     transform: scale(0.5);
     z-index: 2;
    }
+  .im img{
+    display: none;
+    transform: scale(0.7);
+  }
   }

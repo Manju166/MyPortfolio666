@@ -26,7 +26,8 @@
     width: 20rem;
 }
 .portfolio img{
-    width: 19rem;
+    width: 19vw;
+    height: 19vh;
     filter: drop-shadow(-12px) 15px 13px rgba(0,0,0,0.25);
     border-radius: 19px;
     position: absolute;
@@ -35,7 +36,7 @@
 @media screen and (max-width:480px) {
     .portfolio{
         position: relative;
-        top: -13rem !important;
+        top: -7rem !important;
         transform: scale(0.7);
         padding: 1px 10px 10px;
         width: 100%;
@@ -50,6 +51,39 @@
         height: 6rem;
         border-radius: 10px;
         gap: 20px;
+        position: relative;
+    }
+    .blur{
+        display: none;
+    }
+}
+@media screen and (max-width:799px) {
+    .portfolio{
+        position: relative;
+        width: 100%;
+    }
+    .portfolio span:nth-of-type(1){
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-left: -10rem;
+    }
+    .portfolio span:nth-of-type(2){
+        margin-left: -10rem;
+        color: rgb(245, 186, 77);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .portfolio-slider{
+        position: relative; 
+        right: 5rem;
+        transform: scale(1.2); 
+    }
+    .portfolio img{
+        /* width: 8vw; */
+        height: 6rem;
+        border-radius: 10px;
+        /* gap: 20px; */
         position: relative;
     }
     .blur{

@@ -46,3 +46,9 @@
         gap:50px;
     }
 }
+@media screen and (max-width:799px) {
+    .experience{
+        position: relative;
+        top: 4rem !important;
+    }
+}

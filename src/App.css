@@ -38,3 +38,12 @@ body{
   }
   
 }
+@media screen and (max-width:799px) {
+  .App{
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+}
